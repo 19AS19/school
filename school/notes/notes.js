@@ -76,3 +76,33 @@ do{
     console.log(count);
     count++;
 }while(count<20);
+
+/* for loops
+for (initialization; test condition; increment statement){
+    CODE IN HERE WILL WORK IF THE TEST CONDITION IS TRUE
+}
+
+INITIALIZATION: this step executes first. it only executes once.
+you can declare and initialize a loop control variable here. it is
+optional, but you must put in a semi-colon at the end ;
+
+TEST CONDITION: if the test condition is true the block of code executes,
+otherwise, it does not.
+*/
+
+//EXAMPLE
+
+for(let i=0; i<2; i++){
+    console.log("hello", i);
+}
+//we get the same output from this
+let j = 0;
+for(;j<2;j++){
+    console.log("hello", j);
+}
+//we get the same output from this
+let z = 0;
+for(;z<2;){
+    console.log("hello", z);
+    z++
+}
