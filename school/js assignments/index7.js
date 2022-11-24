@@ -1,4 +1,7 @@
 //part.1
-for(var n_term=Number(prompt("nth odd number"));n_term%2==0&&n_term<;n_term++){
-    console.log(odd);
+var oddnumber= Number(prompt("odd number select it"));
+for(let i=0; i<oddnumber; i++){
+    if(oddnumber){
+     
+    }
 }

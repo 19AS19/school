@@ -1,0 +1,19 @@
+ __  __      __    ___  ___ __                ___                  __  
+/  `/  \|\/||__)|  || /\ ||/  \|\ | /\ |       ||__|||\ ||__/||\ |/ _` 
+\__,\__/|  ||   \__/|/~~\||\__/| \|/~~\|___    ||  ||| \||  \|| \|\__> 
+                                                                                                                                                   
+
+Computational Thinking is a way of approaching problems that is useful in computing.
+
+It is composed into several techniques
+
+**Pattern Matching**
+This entails idenitfying patterns and recognising when two patterns are similar
+
+**Advantages**
+>Problems are easier to solve when they share patters, as we can use the same problem-solving solution wherever the pattern exists.
+>The more patterns we can find, the easier and quicker our task of problem solving will be.
+
+**Abstraction**
+>Removing all the unnecessary information about the problem so that only the important aspects of the problem remain
+>It helps to reduce a problem to its essential features and lead to a solution that is simpler, more efficient and faster to implement
