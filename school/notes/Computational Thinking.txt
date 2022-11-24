@@ -15,5 +15,26 @@ This entails idenitfying patterns and recognising when two patterns are similar
 >The more patterns we can find, the easier and quicker our task of problem solving will be.
 
 **Abstraction**
->Removing all the unnecessary information about the problem so that only the important aspects of the problem remain
->It helps to reduce a problem to its essential features and lead to a solution that is simpler, more efficient and faster to implement
+>Removing all the unnecessary information about the problem so that only the important aspects of the problem remain.
+>It helps to reduce a problem to its essential features and lead to a solution that is simpler, more efficient and faster to implement.
+
+**Using abstraction when designing programs**
+>Functions are a very good example of abstraction in programming
+>The prompt() function in javascript for example - you know what it does and how to use it but you don't need to know what happens to the 
+arguments you pass to the function so they apear on the screen - these details are abstracted away.
+
+**Decomposition**
+>Breaking a task down into a set of smaller and simpler tasks.
+
+         __  __  __ ___        __  
+ /\ |   / _`/  \|__)|||__||\/|/__` 
+/~~\|___\__>\__/|  \|||  ||  |.__/ 
+
+>An algorithm is a specific set of step-by-step rules for solving a problem or completing a task.
+>Each step must be so precisely defined that it can be translated into computer language and executed by machine.
+
+**Algorithms must:**
+>have definiteness: Each step must be precisely defined and be unambigous. Computers cannot guess or rely on prior
+expereience so every detail and possibility must be accounted for
+>have one or more inputs and outputs
+>have finiteness: Consist of a finite number of steps and terminate. (An infinite number of steps is not really a solution.)
