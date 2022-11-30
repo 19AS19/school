@@ -37,4 +37,7 @@ arguments you pass to the function so they apear on the screen - these details a
 >have definiteness: Each step must be precisely defined and be unambigous. Computers cannot guess or rely on prior
 expereience so every detail and possibility must be accounted for
 >have one or more inputs and outputs
->have finiteness: Consist of a finite number of steps and terminate. (An infinite number of steps is not really a solution.)
+>have finiteness: Consist of a finite number of steps and terminate. (An infinite number of steps is not really a solution.) 
+>have effectiveness: All operations to be performed must be sufficiently basic that they can be done exactly and in finite length.
+>Have correctness: The right result is obtained for all possible inputs
+>Have a clear flow of control from beginning to end
