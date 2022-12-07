@@ -35,4 +35,24 @@ step.2 => input letter as 'input'
 step.3 => display if 'input' is either a vowel or a consonant
 */
 
-const vowelCheck = input => "aeiouAEIOU".indexOf(input) ? console.log(`${input} is a consonant`) : console.log(`${input} is a vowel`);
+const isVowel = input => ["a", "e", "i", "o", "u"].includes(input.toLowerCase())
+
+/*
+step.1 => start
+step.2 => input numbers of rows as 'num'
+step.3 => output pattern
+step.4 => stop
+*/
+
+function pattern1(num) {
+    str = ''
+    for(i=1;i<=num;i++) {
+        str+=i
+        console.log(str)
+    }
+    arr = Array.from(str);
+    for(i=num;i>0;i--) {
+        arr.pop();
+        console.log(arr.join(''))
+    }
+}

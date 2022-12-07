@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+p1 {
+    margin-left: 200px;
+    border: 2px solid  tomato;
+}
