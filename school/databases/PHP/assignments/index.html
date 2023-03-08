@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script>
+                function validate() {
+                    var requiredElements = ['fname', 'lname', 'email', 'password', 'housenum', 'postcode', 'addr1', 'addr2'];
+                    var success = true;
+
+                    requiredElements.forEach((c) => {
+                        if(document.getElementById(c).value == "") {
+                            success = false;
+                       }
+                    })
+                    if(!success) {
+                        alert("MONKEY MONKEY!");
+                        return false;
+                    }
+                    return true;
+                }
+
+                
+        </script>   
+    </head>
+    <body>
+        <form action="submit.php" method="post" onsubmit="return validate()" id="userform">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email" maxlength="320"><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" maxlength="64"><br>
+
+            <label for="genm">Male</label>
+            <input type="checkbox" id="genm" name="genm" value="Male"><br>
+            <label for="genf">Female</label>
+            <input type="checkbox" id="genf" name="genm" value="Female"><br>
+
+            <label for="housenum">HouseNum:</label><br>
+            <input type="text" id="housenum" name="housenum" maxlength="64"><br>
+
+            <label for="postcode">Post Code:</label><br>
+            <input type="text" id="postcode" name="postcode" maxlength="64"><br>
+
+            <label for="addresslineone">Address Line 1:</label><br>
+            <input type="text" id="addr1" name="addr1" maxlength="64"><br>
+            <label for="addresslinetwo">Address Line 2:</label><br>
+            <input type="text" id="addr2" name="addr2" maxlength="64"><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>
