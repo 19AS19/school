@@ -3,7 +3,7 @@
     <head>
         <script>
                 function validate() {
-                    var requiredElements = ['fname', 'lname', 'email', 'password', 'housenum', 'postcode', 'addr1', 'addr2'];
+                    var requiredElements = ['fname', 'lname', 'email', 'password', 'confirmpassword', 'housenum', 'postcode', 'addr1', 'addr2'];
                     var success = true;
 
                     requiredElements.forEach((c) => {
@@ -12,13 +12,18 @@
                        }
                     })
                     if(!success) {
-                        alert("MONKEY MONKEY!");
+                        alert("there was an error");
                         return false;
                     }
+					if(document.getElementById(password).value != document.getElementById(confirmpassword).value) {
+						alert("password doesn't match");
+						return false;
+					}
+					
                     return true;
                 }
 
-                
+			
         </script>   
     </head>
     <body>
@@ -35,10 +40,8 @@
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password" maxlength="64"><br>
 
-            <label for="genm">Male</label>
-            <input type="checkbox" id="genm" name="genm" value="Male"><br>
-            <label for="genf">Female</label>
-            <input type="checkbox" id="genf" name="genm" value="Female"><br>
+			<label for="confirmpassword">Confirm password:</label><br>
+			<input type="password" id="confirmpassword" name="confirmpassword" maxlength="64"><br>
 
             <label for="housenum">HouseNum:</label><br>
             <input type="text" id="housenum" name="housenum" maxlength="64"><br>
@@ -46,9 +49,9 @@
             <label for="postcode">Post Code:</label><br>
             <input type="text" id="postcode" name="postcode" maxlength="64"><br>
 
-            <label for="addresslineone">Address Line 1:</label><br>
+            <label for="addr1">Address Line 1:</label><br>
             <input type="text" id="addr1" name="addr1" maxlength="64"><br>
-            <label for="addresslinetwo">Address Line 2:</label><br>
+            <label for="addr2">Address Line 2:</label><br>
             <input type="text" id="addr2" name="addr2" maxlength="64"><br>
 
             <button type="submit">Submit</button>
