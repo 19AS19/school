@@ -5,7 +5,7 @@
 			$servername = "10.140.42.235";
 			$username = "AS";
 			$password = "password";
-			$database = "";
+			$database = "AS_database";
 			$port = "3307";
 			$conn = mysqli_connect($servername, $username, $password, $database, $port);
 			

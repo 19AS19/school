@@ -11,10 +11,10 @@
 				return $data;
 			}
 			
-			if (isset($_POST['submit'])) {
+			
 				if(!empty($_POST['fname'])) {
 					$fname = validate_input($_POST['fname']);}
-					echo $fname;
+					echo $fname;	
 				if(!empty($_POST['lname'])) {
 					$lname = validate_input($_POST['lname']);}
 				if(!empty($_POST['email'])) {
@@ -31,8 +31,6 @@
 					$addr1 = validate_input($_POST['addr1']);}
 				if(!empty($_POST['addr2'])) {
 					$addr2 = validate_input($_POST['addr2']);}
-			}
-			
 			
 			
 			$servername = "10.140.42.235";
