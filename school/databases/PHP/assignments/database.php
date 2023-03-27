@@ -37,7 +37,8 @@
             housenum VARCHAR(30),
             postcode VARCHAR(50),
             addr1 VARCHAR(30),
-            addr2 VARCHAR(30)
+            addr2 VARCHAR(30),	
+			socialcredit VARCHAR(5)
 			)";
 			
 			if (mysqli_query($conn, $sql)) {

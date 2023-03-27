@@ -31,6 +31,8 @@
 					$addr1 = validate_input($_POST['addr1']);}
 				if(!empty($_POST['addr2'])) {
 					$addr2 = validate_input($_POST['addr2']);}
+				if(!empty($_POST['socialcredit'])) {
+					$socialcredit = validate_input($_POST['socialcredit']);}
 			
 			
 			$servername = "10.140.42.235";
@@ -44,8 +46,8 @@
 				echo "Failed to connect to MySQL: " . mysqli_connect_error();exit();
 			}
 			else {
-			$sql = "INSERT INTO details (fname, lname, email, password, confirmpassword, housenum, postcode, addr1, addr2) 
-			VALUES('$fname','$lname','$email','$password','$confirmpassword','$housenum','$postcode','$addr1','$addr2')";
+			$sql = "INSERT INTO details (fname, lname, email, password, confirmpassword, housenum, postcode, addr1, addr2, socialcredit) 
+			VALUES('$fname','$lname','$email','$password','$confirmpassword','$housenum','$postcode','$addr1','$addr2', '$socialcredit')";
 			if(mysqli_query($conn, $sql)){
 				echo "Data added successfully :)";
 				}else{

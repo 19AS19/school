@@ -3,7 +3,7 @@
     <head>
         <script>
                 function validate() {
-                    var requiredElements = ['fname', 'lname', 'email', 'password', 'confirmpassword', 'housenum', 'postcode', 'addr1', 'addr2'];
+                    var requiredElements = ['fname', 'lname', 'email', 'password', 'confirmpassword', 'housenum', 'postcode', 'addr1', 'addr2', 'socialcredit'];
                     var success = true;
 
                     requiredElements.forEach((c) => {
@@ -53,6 +53,9 @@
             <input type="text" id="addr1" name="addr1" maxlength="64"><br>
             <label for="addr2">Address Line 2:</label><br>
             <input type="text" id="addr2" name="addr2" maxlength="64"><br>
+			
+			<label for="socialcredit">Social Credit:</label><br>
+			<input type="text" id="socialcredit" name="socialcredit" maxlength="5"><br>
 
             <button type="submit" name="submit">Submit</button>
 
